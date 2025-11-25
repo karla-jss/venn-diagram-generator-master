@@ -6,8 +6,8 @@
   <link rel="icon" href="./../images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="./../css/materialize.min.css" media="screen,projection">
-  <link type="text/css" rel="stylesheet" href="./../css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Venn Diagram Generator</title>
 </head>
@@ -25,12 +25,14 @@
       <div class="col l7 hide-on-med-and-down naving">
         <div class="row">
           <div class="col s4">
-            <div><a style="font-weight: bold; font-size: 120%;" class="waves-effect btn-flat" href="index.html">Presentacion</a></div>
+            <div><a style="font-weight: bold; font-size: 120%;" class="waves-effect btn-flat"
+                href="index.html">Presentacion</a></div>
           </div>
           <div class="col s4">
-            <div class="top-selected"><a style="font-weight: bold; font-size: 120%;" class="waves-effect btn-flat disabled" href="./graph.html">Evaluador de correos</a></div>
+            <div class="top-selected"><a style="font-weight: bold; font-size: 120%;"
+                class="waves-effect btn-flat disabled" href="./graph.html">Evaluador de correos</a></div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -47,33 +49,39 @@
     <div class="fixed-action-btn"><a class="btn-floating btn-large waves-effect waves-light red" id="imporSVG"><i
           class="material-icons">file_download</i></a></div>
     <div class="row">
-      <form style="margin-top: 7%;" class="col s12 l4" method="POST" action="https://devjair01.app.n8n.cloud/webhook/ff49952e-ed60-4d78-ad11-fcbcfa75504d">
+      <form style="margin-top: 7%;" class="col s12 l4" method="POST"
+        action="https://devjair01.app.n8n.cloud/webhook/ff49952e-ed60-4d78-ad11-fcbcfa75504d">
         <h1>Evaluador</h1>
         <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Ingrese el correo" id="correo" type="email" name="correo">
-            </div>
-            
-            <div class="input-field col s12">
-                <button class="waves-effect waves-light btn eval" type="submit">
-                    <i class="material-icons left">forward</i>Evaluar correo
-                </button>
-            </div>
+          <div class="input-field col s12">
+            <input placeholder="Ingrese el correo" id="correo" type="email" name="correo">
+          </div>
+
+          <div class="input-field col s12">
+            <button class="waves-effect waves-light btn eval" type="submit">
+              <i class="material-icons left">forward</i>Evaluar correo
+            </button>
+          </div>
         </div>
-    </form>
+      </form>
       <div class="col s12 l8">
         <div class="row">
-          <div class="" id="logo">
-            <div style="margin-left:35%;margin-top:14%;background-color: rgb(0, 0, 0);width: 50%; border-radius: 15px ;" class="col s12 m4 promo center-align"><i class="material-icons" style="
-              font-size: 300px; 
-              color: #000000;
-              text-shadow: 4px 4px px rgba(148, 24, 86, 0.4);
-          ">
-              sms
-          </i>
-          
+          <div class="col s12 center-align logo-container" id="logo">
+            <div class="logo-box">
+              <i class="material-icons large-icon">sms</i>
               <h2><strong>Control por mensaje</strong></h2>
+            </div>
           </div>
-            
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 </html>
