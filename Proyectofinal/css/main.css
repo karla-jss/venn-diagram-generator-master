@@ -351,8 +351,8 @@ button.eval i {
 
 .large-icon {
   font-size: 300px;
-  color: #000000;
-  text-shadow: 4px 4px 4px rgba(148, 24, 86, 0.4);
+  color: #26de19;
+  text-shadow: 4px 4px 20px rgb(255, 10, 255);
 }
 
 @media only screen and (max-width: 992px) {
